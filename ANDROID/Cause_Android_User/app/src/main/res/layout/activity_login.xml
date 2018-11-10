@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".activity.LoginActivity"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="3"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#f9f9f9">
+    <LinearLayout
+      android:layout_width="128dp"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:gravity="center">
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="환영합니다!"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center"
+        android:lineSpacingExtra="2sp"
+        android:fontFamily="@font/nanum_font_regular"/>
+      <ImageView
+        android:layout_width="128dp"
+        android:layout_height="68dp"
+        android:src="@drawable/login_logo"/>
+
+    </LinearLayout>
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="7"
+    android:paddingTop="30dp"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp"
+    android:paddingBottom="40dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="평소에 기부하기 어려우셨나요?\nBFC는 일상속에서 따뜻한 마음을\n전달할 수 있도록 도와드립니다."
+      android:textSize="14sp"
+      android:lineHeight="22sp"
+      android:textAlignment="center"
+      android:textColor="@color/colorBlack"
+      android:lineSpacingExtra="8sp"
+      android:layout_marginBottom="18dp"
+      android:fontFamily="@font/nanum_font_regular"/>
+
+    <LinearLayout
+      android:layout_width="36dp"
+      android:layout_height="6dp"
+      android:orientation="horizontal">
+      <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@drawable/round_grey"
+        android:backgroundTint="@color/colorBlue"/>
+      <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+      <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@drawable/round_grey"/>
+      <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+      <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@drawable/round_grey"/>
+      <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+      <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@drawable/round_grey"/>
+    </LinearLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"/>
+
+    <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:background="@drawable/login_facebook"
+      android:layout_marginBottom="14dp"
+      android:id="@+id/facebookLoginBtn"/>
+
+    <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:background="@drawable/login_google"/>
+    
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".activity.SponsorRegistrationActivity"
+  android:orientation="vertical">
+
+  <android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+    <ImageButton
+      android:layout_width="28dp"
+      android:layout_height="28dp"
+      android:layout_marginStart="15dp"
+      android:background="@drawable/ic_back_arrow" />
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="15dp"
+      android:textSize="20sp"
+      android:textColor="#000000"
+      android:lineSpacingExtra="9sp"
+      android:text="후원자 등록"
+      android:fontFamily="@font/nanum_font_bold"/>
+  </android.support.v7.widget.Toolbar>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="이름"
+          android:textSize="14sp"
+          android:fontFamily="@font/nanum_font_bold"
+          android:layout_marginBottom="10dp"/>
+        <EditText
+          android:layout_width="match_parent"
+          android:layout_height="54dp"
+          android:background="@drawable/side_primary"
+          android:hint="이름을 입력하세요"
+          android:paddingStart="16dp"
+          android:textSize="12sp"
+          android:fontFamily="@font/nanum_font_regular"
+          android:layout_marginBottom="10dp"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="생년월일"
+          android:textSize="14sp"
+          android:fontFamily="@font/nanum_font_bold"
+          android:layout_marginBottom="10dp"/>
+        <EditText
+          android:layout_width="match_parent"
+          android:layout_height="54dp"
+          android:background="@drawable/side_primary"
+          android:hint="생년월일을 입력하세요. (ex. 20001231)"
+          android:paddingStart="16dp"
+          android:textSize="12sp"
+          android:fontFamily="@font/nanum_font_regular"
+          android:layout_marginBottom="10dp"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="성별"
+          android:textSize="14sp"
+          android:fontFamily="@font/nanum_font_bold"
+          android:layout_marginBottom="10dp"/>
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="54dp"
+          android:orientation="horizontal"
+          android:layout_marginBottom="10dp">
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/side_primary"
+            android:text="남자"
+            android:fontFamily="@font/nanum_font_regular"
+            android:textSize="12sp"
+            android:gravity="center"/>
+          <View
+            android:layout_width="8dp"
+            android:layout_height="match_parent"/>
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/side_primary"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="여자"
+            android:fontFamily="@font/nanum_font_regular"/>
+        </LinearLayout>
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="이메일 주소"
+          android:textSize="14sp"
+          android:fontFamily="@font/nanum_font_bold"
+          android:layout_marginBottom="10dp"/>
+        <EditText
+          android:layout_width="match_parent"
+          android:layout_height="54dp"
+          android:background="@drawable/side_primary"
+          android:hint="이메일 주소를 입력하세요."
+          android:paddingStart="16dp"
+          android:textSize="12sp"
+          android:fontFamily="@font/nanum_font_regular"
+          android:layout_marginBottom="10dp"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="휴대폰 번호"
+          android:textSize="14sp"
+          android:fontFamily="@font/nanum_font_bold"
+          android:layout_marginBottom="10dp"/>
+        <EditText
+          android:layout_width="match_parent"
+          android:layout_height="54dp"
+          android:background="@drawable/side_primary"
+          android:hint="휴대폰 번호를 입력하세요. (ex. 010-1234-5678)"
+          android:paddingStart="16dp"
+          android:textSize="12sp"
+          android:fontFamily="@font/nanum_font_regular"
+          android:layout_marginBottom="10dp"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="휴대폰 번호"
+          android:textSize="14sp"
+          android:fontFamily="@font/nanum_font_bold"
+          android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="53dp"
+          android:orientation="horizontal"
+          android:layout_marginBottom="10dp">
+          <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="우편번호"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/nanum_font_bold"
+            android:textSize="12sp"/>
+          <View
+            android:layout_width="8dp"
+            android:layout_height="match_parent"/>
+          <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/side_primary"
+            android:text="우편번호 검색"
+            android:textSize="12sp"
+            android:fontFamily="@font/nanum_font_bold"
+            android:textColor="@color/colorBlack"/>
+        </LinearLayout>
+        <Button
+          android:layout_width="match_parent"
+          android:layout_height="53dp"
+          android:background="@color/colorPrimary"
+          android:text="주소"
+          android:textColor="@color/colorWhite"
+          android:textSize="12sp"
+          android:fontFamily="@font/nanum_font_regular"
+          android:layout_marginBottom="10dp"/>
+
+        <EditText
+          android:layout_width="match_parent"
+          android:layout_height="53dp"
+          android:background="@drawable/side_primary"
+          android:hint="상세주소를 입력해주세요."
+          android:fontFamily="@font/nanum_font_regular"
+          android:paddingStart="16dp"
+          android:textSize="12sp"
+          android:layout_marginBottom="20dp"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="주민등록번호"
+          android:fontFamily="@font/nanum_font_bold"
+          android:textSize="14sp"
+          android:layout_marginBottom="10dp"
+          android:textColor="@color/colorBlack"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="53dp"
+          android:orientation="horizontal"
+          android:layout_marginBottom="20dp">
+          <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/side_primary"/>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="-"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/nanum_font_bold"/>
+          <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/side_primary"/>
+        </LinearLayout>
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="26dp"
+          android:orientation="horizontal"
+          android:gravity="center_vertical"
+          android:layout_marginBottom="20dp">
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기부금 영수증 신청여부"
+            android:textSize="14sp"
+            android:fontFamily="@font/nanum_font_bold"
+            android:textColor="@color/colorBlack"/>
+
+          <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="자세히 보기"
+              android:textSize="10sp"
+              android:fontFamily="@font/nanum_font_regular"
+              android:layout_marginRight="8dp"/>
+            <CheckBox
+              android:layout_width="26dp"
+              android:layout_height="26dp"/>
+          </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="26dp"
+          android:orientation="horizontal"
+          android:gravity="center_vertical"
+          android:layout_marginBottom="20dp">
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="개인저옵 수집, 이용 동의 (필수)"
+            android:textSize="14sp"
+            android:fontFamily="@font/nanum_font_bold"
+            android:textColor="@color/colorBlack"/>
+
+          <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="자세히 보기"
+              android:textSize="10sp"
+              android:fontFamily="@font/nanum_font_regular"
+              android:layout_marginRight="8dp"/>
+            <CheckBox
+              android:layout_width="26dp"
+              android:layout_height="26dp"/>
+          </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="26dp"
+          android:orientation="horizontal"
+          android:gravity="center_vertical"
+          android:layout_marginBottom="20dp">
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="후원 약관 동의"
+            android:textSize="14sp"
+            android:fontFamily="@font/nanum_font_bold"
+            android:textColor="@color/colorBlack"/>
+
+          <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="자세히 보기"
+              android:textSize="10sp"
+              android:fontFamily="@font/nanum_font_regular"
+              android:layout_marginRight="8dp"/>
+            <CheckBox
+              android:layout_width="26dp"
+              android:layout_height="26dp"/>
+          </LinearLayout>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/colorGrey"
+          android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="26dp"
+          android:orientation="horizontal"
+          android:gravity="center_vertical"
+          android:layout_marginBottom="20dp">
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="모든 약관에 동의합니다."
+            android:textSize="14sp"
+            android:fontFamily="@font/nanum_font_bold"
+            android:textColor="@color/colorBlack"/>
+
+          <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="자세히 보기"
+              android:textSize="10sp"
+              android:fontFamily="@font/nanum_font_regular"
+              android:layout_marginRight="8dp"/>
+            <CheckBox
+              android:layout_width="26dp"
+              android:layout_height="26dp"/>
+          </LinearLayout>
+        </LinearLayout>
+      </LinearLayout>
+      <Button
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="등록하기"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        android:fontFamily="@font/nanum_font_regular"
+        android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+  </ScrollView>
+
+
+</LinearLayout>

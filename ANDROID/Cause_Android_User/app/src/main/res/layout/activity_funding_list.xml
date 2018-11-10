@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".activity.FundingListActivity"
+  android:orientation="vertical">
+
+  <android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:elevation="10dp">
+    <ImageButton
+      android:layout_width="28dp"
+      android:layout_height="28dp"
+      android:layout_marginStart="15dp"
+      android:background="@drawable/ic_back_arrow" />
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="15dp"
+      android:textSize="20sp"
+      android:textColor="#000000"
+      android:lineSpacingExtra="9sp"
+      android:text="펀딩 목록"
+      android:fontFamily="@font/nanum_font_bold"/>
+  </android.support.v7.widget.Toolbar>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="70dp"
+      android:orientation="horizontal"
+      android:gravity="center_vertical"
+      android:background="@drawable/side_primary"
+      android:paddingStart="16dp"
+      android:paddingEnd="16dp"
+      android:layout_marginBottom="20dp">
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="총 소유 포인트"
+        android:textSize="16sp"
+        android:fontFamily="@font/nanum_font_bold"
+        android:lineHeight="18sp"
+        android:textColor="@color/colorBlack"/>
+
+      <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="125,000 포인트"
+        android:textColor="@color/colorBlack"
+        android:lineHeight="18sp"
+        android:textSize="16sp"
+        android:fontFamily="@font/nanum_font_bold"/>
+    </LinearLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/colorRoundGrey"
+      android:layout_marginBottom="20dp"/>
+
+    <android.support.v7.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+  </LinearLayout>
+
+
+
+</LinearLayout>

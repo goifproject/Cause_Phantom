@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".activity.DonationSuccessActivity"
+  android:orientation="vertical">
+
+  <android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:paddingStart="15dp"
+    android:elevation="10dp">
+    <ImageButton
+      android:layout_width="28dp"
+      android:layout_height="28dp"
+      android:background="@drawable/ic_back_arrow"
+      android:id="@+id/backButton"/>
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="15dp"
+      android:textSize="20sp"
+      android:textColor="#000000"
+      android:lineSpacingExtra="3sp"
+      android:text="기부"/>
+  </android.support.v7.widget.Toolbar>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="22dp"
+    android:orientation="vertical">
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/round_primary"
+      android:orientation="vertical"
+      android:paddingTop="64dp"
+      android:paddingStart="16dp"
+      android:paddingEnd="16dp"
+      android:paddingBottom="44dp">
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanum_font_bold"
+        android:text="기부금이"
+        android:textSize="20sp"
+        android:lineHeight="20sp"
+        android:textColor="@color/colorWhite"/>
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="정삭적으로 "
+          android:textSize="20sp"
+          android:lineHeight="20sp"
+          android:textColor="@color/colorWhite"
+          android:fontFamily="@font/nanum_font_bold"/>
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="결제되었습니다."
+          android:fontFamily="@font/nanum_font_regular"
+          android:textColor="@color/colorWhite"
+          android:textSize="20sp"/>
+      </LinearLayout>
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30,000 포인트 결제"
+        android:textColor="#99ffffff"
+        android:textSize="12sp"
+        android:layout_marginBottom="40dp"/>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="결제 포인트"
+          android:textColor="#99ffffff"
+          android:textSize="12sp"
+          android:fontFamily="@font/nanum_font_regular"/>
+        <View
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"/>
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="30,000 포인트"
+          android:textSize="12sp"
+          android:textColor="@color/colorWhite"
+          android:fontFamily="@font/nanum_font_bold"/>
+      </LinearLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#99ffffff"
+        android:layout_marginBottom="16dp"/>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="결제 후 잔액"
+          android:textColor="#99ffffff"
+          android:textSize="12sp"
+          android:fontFamily="@font/nanum_font_regular"/>
+        <View
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"/>
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="20,000 포인트"
+          android:textSize="12sp"
+          android:textColor="@color/colorWhite"
+          android:fontFamily="@font/nanum_font_bold"/>
+      </LinearLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#99ffffff"
+        android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/colorPrimary"
+    android:text="확인"
+    android:textSize="14sp"
+    android:textColor="@color/colorWhite"
+    android:fontFamily="@font/nanum_font_regular"/>
+
+</LinearLayout>

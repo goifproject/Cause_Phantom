@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="-8sp"
+            android:layout_marginEnd="4dp"
+            android:text="홍길민"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:lineSpacingExtra="-6sp"
+                android:text="공감 34  |  2018년 8월 29일"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="#bdbdbd"
+                android:lineSpacingExtra="-6sp"
+                android:gravity="end"
+                android:text="공감하기   |   신고하기" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:textSize="10sp"
+            android:textColor="#bdbdbd"
+            android:lineSpacingExtra="4sp"
+            android:text="않은 된 별이 했던 북간도에 있습니다. 어머니 릴케 다하지 그리워 하나에 까닭입니다. 하나에 된 릴케 어머님, 당신은 라이너 하나에 거외다."/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="#f5f5f5"/>
+    </LinearLayout>
+</LinearLayout>

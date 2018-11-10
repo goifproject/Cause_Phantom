@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context=".activity.DonationActivity"
+  android:orientation="vertical">
+  <android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:elevation="10dp">
+    <ImageButton
+      android:layout_width="28dp"
+      android:layout_height="28dp"
+      android:layout_marginStart="15dp"
+      android:background="@drawable/ic_back_arrow"
+      android:id="@+id/backButton"/>
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="15dp"
+      android:textSize="20sp"
+      android:textColor="#000000"
+      android:lineSpacingExtra="9sp"
+      android:text="기부" />
+  </android.support.v7.widget.Toolbar>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:textSize="14sp"
+      android:textColor="#000000"
+      android:lineSpacingExtra="6sp"
+      android:text="보유 금액" />
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="53dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="20dp"
+      android:background="@drawable/side_primary"
+      android:paddingStart="16sp"
+      android:text="50,000 포인트"
+      android:gravity="center_vertical"
+      android:textColor="@color/colorBlack"
+      android:textSize="12sp"
+      android:fontFamily="@font/nanum_font_regular"/>
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/colorGrey"/>
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:textSize="14sp"
+      android:textColor="#000000"
+      android:lineSpacingExtra="6sp"
+      android:text="기부할 금액 입력" />
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="53dp"
+      android:layout_marginTop="10dp"
+      android:background="@drawable/side_primary"
+      android:hint="금액을 입력하세요."
+      android:textSize="12sp"
+      android:paddingStart="16dp"
+      android:fontFamily="@font/nanum_font_regular"/>
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"/>
+
+  </LinearLayout>
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="#f9ac19"
+    android:text="기부하기"
+    android:textColor="#ffffff"
+    android:layout_gravity="bottom"/>
+</LinearLayout>

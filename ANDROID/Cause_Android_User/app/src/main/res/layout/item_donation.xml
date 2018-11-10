@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="286dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+  android:background="@color/colorWhite"
+  android:layout_marginRight="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="18sp"
+        android:textColor="#2f3b4c"
+        android:lineSpacingExtra="2sp"
+        android:text="시리아 어린이들의 잃어버린 6년"
+      android:id="@+id/donationTitle"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="26dp"
+        android:textSize="10sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="8sp"
+        android:text="여섯 살 무하마드에게 전쟁은 항상 일상입니다.
+6년간 이어진 전쟁, 지금까지 아이가 본 건 폐허가 된
+거리에서 울부짖는 울부짖는 사람들 뿐입니다."
+      android:id="@+id/donationDetail"/>
+    <Button
+        android:layout_width="246dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/side_primary"
+        android:text="기부하기"
+        android:textSize="10sp"
+        android:textColor="#000000"
+      android:id="@+id/donationBtn"/>
+</LinearLayout>

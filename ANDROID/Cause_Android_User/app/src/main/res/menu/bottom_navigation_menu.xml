@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+    android:id="@+id/funding"
+    android:enabled="true"
+    android:icon="@drawable/icon_funding"
+    android:title="펀딩"
+    app:showAsAction="ifRoom"/>
+  <item
+    android:id="@+id/donation"
+    android:enabled="true"
+    android:icon="@drawable/icon_donation"
+    android:title="기부"
+    app:showAsAction="ifRoom"/>
+  <item
+    android:id="@+id/setting"
+    android:enabled="true"
+    android:icon="@drawable/icon_setting"
+    android:title="설정"
+    app:showAsAction="ifRoom"/>
+</menu>
